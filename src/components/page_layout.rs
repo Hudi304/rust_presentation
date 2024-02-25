@@ -18,19 +18,18 @@ pub fn PageLayout(children: Children) -> impl IntoView {
     }
 
     view! {
-        <div class="flex justify-between h-full w-full">
+        <div class="flex justify-between h-full w-full gap-3">
 
             <button
-            
-             class="h-full w-20 bg-gray-600 bg-opacity-20 hover:bg-gray-600 
-             transition-all font-extrabold"
-             on:click= move |_| navigate("/",Default::default() )
-             >
+                class="h-full w-20 bg-gray-600 bg-opacity-20 hover:bg-gray-600 
+                transition-all font-extrabold"
+                on:click=move |_| navigate("/", Default::default())
+            >
                 "<"
             </button>
 
-            <div class="bg-slate-500 p-3 rounded-md shadow-md">
-            {children()}
+            <div class="flex h-full items-center justify-center">
+                <div class="bg-slate-500 p-3 rounded-md shadow-md">{children()}</div>
             </div>
 
             <button class="h-full w-20 bg-gray-600 bg-opacity-20 hover:bg-gray-600 transition-all font-extrabold">

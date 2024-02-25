@@ -10,7 +10,9 @@ pub fn Intro_01(#[prop(into)] cb: Callback<i32, ()>) -> impl IntoView {
 
     view! {
         <PageLayout>
-            <div>"Intro " {count}</div>
+            // <img src="public/rust.png" class="w-1/2" alt="Leptos logo"/>
+            <div class="text-orange-500 text-7xl font-bold">"Rust"</div>
+            <div class="">"A completely new way of programming!"</div>
         </PageLayout>
     }
 }
