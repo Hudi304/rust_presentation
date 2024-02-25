@@ -1,18 +1,17 @@
 mod app;
+mod components;
 
 use app::*;
 use leptos::*;
-use leptos_router::*;
+use components::main_routes::PresentationRoutes;
 
-fn main() {
+fn main()
+{
     mount_to_body(|| {
         view! {
             <Router>
-                <Routes>
-                    <Route path="/" view=|| view! {<div>"home"</div>}/>
-                    <Route path="/*any" view=|| view! { <h1>"Not Found"</h1> }/>
-                </Routes>
+               <PresentationRoutes
             </Router>
         }
-    })
+    });
 }
