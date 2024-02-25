@@ -11,7 +11,7 @@ fn main() {
         view! {
             <div class="w-screen h-screen bg-blue-950 flex items-center justify-center">
                 <Router>
-                    <PresentationRoutes   />
+                    <PresentationRoutes/>
                 </Router>
             </div>
         }
