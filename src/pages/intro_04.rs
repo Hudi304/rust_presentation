@@ -5,7 +5,7 @@ use crate::components::page_layout::PageLayout;
 #[component]
 pub fn TheBorrowChecker() -> impl IntoView {
     view! {
-        <PageLayout>
+        // <PageLayout>
             <div class="text-orange-500 text-7xl font-bold">"The Borrow Checker"</div>
 
             <div>"RAII (Resource Acquisition Is Initialization) "</div>
@@ -33,6 +33,6 @@ pub fn TheBorrowChecker() -> impl IntoView {
                 </div>
             </div>
 
-        </PageLayout>
+        // </PageLayout>
     }
 }

@@ -29,14 +29,12 @@ pub fn PresentationRoutes() -> impl IntoView {
                 }
             />
 
-            <Route path="/intro_02" view=|| view! { <Intro_02/> }/>
-            <Route path="/intro_03" view=|| view! { <MemorySafety_03/> }/>
-            <Route path="/intro_04" view=|| view! { <TheBorrowChecker/> }/>
-            <Route path="/intro_05" view=|| view! { <TheBorrowChecker2/> }/>
+            // <Route path="/intro_02" view=|| view! { <Intro_02/> }/>
+            // <Route path="/intro_03" view=|| view! { <MemorySafety_03/> }/>
+            // <Route path="/intro_04" view=|| view! { <TheBorrowChecker/> }/>
+            // <Route path="/intro_05" view=|| view! { <TheBorrowChecker2/> }/>
 
-            <Route path="/bibliography" view=|| view! { <Bibliography/> }/>
-
-
+            // <Route path="/bibliography" view=|| view! { <Bibliography/> }/>
 
             <Route path="/*any" view=|| view! { <h1>"Not Found"</h1> }/>
 

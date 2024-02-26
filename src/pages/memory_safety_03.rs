@@ -5,7 +5,7 @@ use crate::components::page_layout::PageLayout;
 #[component]
 pub fn MemorySafety_03() -> impl IntoView {
     view! {
-        <PageLayout>
+        // <PageLayout>
             <div class="text-orange-500 text-7xl font-bold">"Memory safety"</div>
 
             <div class="grid  grid-cols-[100px_auto_auto] grid-rows-[30px_auto_auto] border">
@@ -44,6 +44,6 @@ pub fn MemorySafety_03() -> impl IntoView {
                 </span>
 
             </div>
-        </PageLayout>
+        // </PageLayout>
     }
 }
