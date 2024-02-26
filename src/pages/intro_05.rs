@@ -13,3 +13,4 @@ pub fn TheBorrowChecker2() -> impl IntoView {
         </PageLayout>
     }
 }
+ 
