@@ -1,11 +1,16 @@
 use leptos::*;
 
-use crate::components::page_layout::PageLayout;
+use super::custom_route::CustomRoute;
 
 #[component]
-pub fn NavButton(children: Children) -> impl IntoView {
+pub fn NavButton(children: Children, route: CustomRoute) -> impl IntoView {
+    let navigate = leptos_router::use_navigate();
+
     view! {
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button
+            class="text-gray-500 hover:text-blue-500 shadow-none font-bold flex px-1"
+            on:click=move |_| navigate(route.path,Default::default())
+        >
             {children()}
         </button>
     }

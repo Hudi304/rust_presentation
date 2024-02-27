@@ -33,16 +33,13 @@ pub fn PageLayout(children: Children) -> impl IntoView {
             </div>
 
             <button class="h-full w-20
-                hover:bg-gray-600 
-                border-none
-                outline-none
-                ring-0
-                hover:bg-opacity-20 
-                transition-all 
-                font-extrabold"
-            >
-            ">"
-            </button>
+            hover:bg-gray-600 
+            border-none
+            outline-none
+            ring-0
+            hover:bg-opacity-20 
+            transition-all 
+            font-extrabold">">"</button>
 
         </div>
     }
