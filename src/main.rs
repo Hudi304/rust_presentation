@@ -6,9 +6,8 @@ use leptos::{ mount_to_body, view };
 use leptos_router::*;
 use components::main_routes::PresentationRoutes;
 
-use crate::components::{ custom_route::CustomRoute, navigation::Navigation };
+use crate::components::{ app_bar::AppBar, custom_route::CustomRoute, navigation::Navigation };
 
-use leptos_icons::*;
 fn main() {
     let routes: Vec<CustomRoute> = vec![
         CustomRoute::new("/", "/"),
@@ -37,28 +36,7 @@ fn main() {
                     <Navigation routes=routes/>
 
                     <div class="w-screen h-screen bg-gray-900 grid grid-rows-[60px_auto]">
-
-                        <div class="flex items-center justify-between p-4">
-
-                            <Icon
-                                class="text-gray-500 hover:text-gray-400 transition-all mr-3"
-                                icon=icondata::BiMenuRegular
-                                width="30px"
-                                height="30px"
-                            />
-
-                            <div class="flex items-center justify-center text-3xl">
-                                "Not a faster Horse, but a new way of programming."
-                            </div>
-
-                            <Icon
-                                class="text-gray-500 hover:text-gray-400 transition-all mr-3"
-                                icon=icondata::BiMenuRegular
-                                width="30px"
-                                height="30px"
-                            />
-
-                        </div>
+                        <AppBar/>
 
                         <PresentationRoutes/>
                     </div>

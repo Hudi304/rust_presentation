@@ -3,3 +3,4 @@ pub mod page_layout;
 pub mod navigation;
 pub mod nav_button;
 pub mod custom_route;
+pub mod app_bar;
