@@ -1,7 +1,5 @@
 use leptos::*;
 
-use crate::components::page_layout::PageLayout;
-
 #[component]
 pub fn Intro_02() -> impl IntoView {
     view! {

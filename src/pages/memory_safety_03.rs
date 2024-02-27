@@ -1,7 +1,5 @@
 use leptos::*;
 
-use crate::components::page_layout::PageLayout;
-
 #[component]
 pub fn MemorySafety_03() -> impl IntoView {
     view! {

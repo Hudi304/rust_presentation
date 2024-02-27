@@ -1,7 +1,5 @@
 use leptos::*;
 
-use crate::components::page_layout::PageLayout;
-
 #[component]
 pub fn TheBorrowChecker() -> impl IntoView {
     view! {

@@ -9,7 +9,7 @@ pub fn NavButton(children: Children, route: CustomRoute) -> impl IntoView {
     view! {
         <button
             class="text-gray-500 hover:text-blue-500 shadow-none font-bold flex px-1"
-            on:click=move |_| navigate(route.path,Default::default())
+            on:click=move |_| navigate(route.path, Default::default())
         >
             {children()}
         </button>

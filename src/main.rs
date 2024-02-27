@@ -2,7 +2,7 @@ mod app;
 mod pages;
 mod components;
 
-use leptos::{ create_signal, mount_to_body, view };
+use leptos::{ mount_to_body, view };
 use leptos_router::*;
 use components::main_routes::PresentationRoutes;
 
@@ -10,8 +10,6 @@ use crate::components::{ custom_route::CustomRoute, navigation::Navigation };
 
 use leptos_icons::*;
 fn main() {
-    let (is_menu_visible, set_is_menu_visible) = create_signal(true);
-
     let routes: Vec<CustomRoute> = vec![
         CustomRoute::new("/", "/"),
         CustomRoute::new("/intro", "Introduction"),

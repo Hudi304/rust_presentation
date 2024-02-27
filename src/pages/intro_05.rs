@@ -1,7 +1,5 @@
 use leptos::*;
 
-use crate::components::page_layout::PageLayout;
-
 #[component]
 pub fn TheBorrowChecker2() -> impl IntoView {
     view! {
@@ -11,4 +9,3 @@ pub fn TheBorrowChecker2() -> impl IntoView {
         <div>"2) Data can have multiple readers and one writer."</div>
     }
 }
- 
